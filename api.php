@@ -12,9 +12,9 @@ class Persona {
 
   use FullName;
 
-  public $nome;
-  public $cognome;
-  public $indirizzo;
+  private $nome;
+  private $cognome;
+  private $indirizzo;
 
   public function __construct($nome, $cognome, $indirizzo){
     $this -> nome = $nome;
@@ -30,8 +30,8 @@ class Persona {
 
 class Studente extends Persona {
 
-  public $programma;
-  public $tasse;
+  private $programma;
+  private $tasse;
 
   public function __construct($nome, $cognome, $indirizzo, $programma, $tasse){
 
@@ -48,8 +48,8 @@ class Studente extends Persona {
 
 class Insegnante extends Persona {
 
-  public $specializzazione;
-  public $paga;
+  private $specializzazione;
+  private $paga;
 
   public function __construct($nome, $cognome, $indirizzo, $specializzazione, $paga){
 
